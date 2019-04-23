@@ -12,8 +12,10 @@ class Dog
     @name
   end
   
-  def self.all(name)
-    self.name
+  def self.all
+    @@all.each do |new_name|
+      new_name.name
+    end
   end
   
   def self.clear_all
